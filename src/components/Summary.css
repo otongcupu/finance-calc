@@ -1,0 +1,51 @@
+/* Summary.css */
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.summary-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+.summary-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.summary-card:hover {
+    transform: translateY(-3px);
+}
+
+.summary-card h3 {
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.summary-card p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.summary-card.income {
+    border-top: 5px solid #38a169;
+}
+
+.summary-card.expense {
+    border-top: 5px solid #e53e3e;
+}
+
+.summary-card.balance {
+    border-top: 5px solid #3182ce;
+}
